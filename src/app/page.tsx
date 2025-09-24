@@ -5,7 +5,12 @@ export default async function HomePage() {
   const { isAuthenticated } = await auth()
 
   if (isAuthenticated) {
-    return <div>Sign in to view this page </div>
+    return (
+      <div>
+        <h1 className="text-2xl font-bold mb-5">Welcome Home!</h1>
+        <p>1. clerk authentication</p>
+      </div>
+    )
   }
 
   const user = await currentUser()
