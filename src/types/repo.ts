@@ -1,8 +1,8 @@
-// /types/repo.ts
+// types/repo.ts (good practice to define types in a separate file)
 export interface Repository {
   id: number
   name: string
-  description: string | null // 깃허브에 설명이 없는 경우도 있음
+  description: string | null // GitHub descriptions can be null
   stargazers_count: number
   forks_count: number
   watchers_count: number
